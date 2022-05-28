@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'iA Writer Duospace';
+	font-weight: normal;
+	font-style: normal;
+	src: url('/iAWriterDuospace-Regular.woff2') format('woff2'),
+		url('/iAWriterDuospace-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'iA Writer Duospace';
+	font-weight: normal;
+	font-style: italic;
+	src: url('/iAWriterDuospace-Italic.woff2') format('woff2'),
+		url('/iAWriterDuospace-Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'iA Writer Duospace';
+	font-weight: bold;
+	font-style: normal;
+	src: url('/iAWriterDuospace-Bold.woff2') format('woff2'),
+		url('/iAWriterDuospace-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'iA Writer Duospace';
+	font-weight: bold;
+	font-style: italic;
+	src: url('/iAWriterDuospace-BoldItalic.woff2') format('woff2'),
+		url('/iAWriterDuospace-BoldItalic.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	font-size: 18px;
+	line-height: 1.5;
+	height: -webkit-fill-available;
+	font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Neue', Helvetica,
+		sans-serif;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+	font-family: 'iA Writer Duospace', 'Courier New', Courier, monospace;
+
+	padding: 0 1em;
+
+	--color-black: #252525;
+	--color-secondary: #d2d2d2;
+	--color-accent: #f95f19;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+button {
+	appearance: none;
+	background: transparent;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+:target {
+	scroll-margin-top: 2em;
+}
+
+a {
+	color: var(--color-black);
+	transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+	color: var(--color-secondary);
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
