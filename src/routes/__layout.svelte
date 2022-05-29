@@ -8,6 +8,14 @@
 		y = e.clientY - 50
 		cursor.style.transform = `translate(${x}px, ${y}px)`
 	}
+
+	const onMouseEnter = () => {
+		cursor.style.display = 'block'
+	}
+
+	const onMouseLeave = () => {
+		cursor.style.display = 'none'
+	}
 </script>
 
 <svelte:head>
@@ -18,7 +26,7 @@
 	/>
 </svelte:head>
 
-<svelte:body on:mousemove={onMouseMove} />
+<svelte:body on:mousemove={onMouseMove} on:mouseenter={onMouseEnter} on:mouseleave={onMouseLeave} />
 <slot />
 <div id="cursor" bind:this={cursor}></div>
 
@@ -33,6 +41,6 @@
 		pointer-events: none;
 		top: 0;
 		left: 0;
-		transform: translate(-50%, -50%);
+		display: none;
 	}
 </style>
