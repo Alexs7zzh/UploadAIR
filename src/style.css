@@ -48,8 +48,7 @@ html {
 	font-size: 18px;
 	line-height: 1.5;
 	height: -webkit-fill-available;
-	font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Neue', Helvetica,
-		sans-serif;
+	font-family: 'iA Writer Duospace', 'Courier New', Courier, monospace;
 }
 
 html:focus-within {
@@ -59,9 +58,10 @@ html:focus-within {
 body {
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
-	font-family: 'iA Writer Duospace', 'Courier New', Courier, monospace;
 
 	padding: 0 1em;
+	position: relative;
+	cursor: none;
 
 	--color-black: #252525;
 	--color-secondary: #d2d2d2;
@@ -107,6 +107,7 @@ h6 {
 a {
 	color: var(--color-black);
 	transition: color 0.1s ease-in-out;
+	cursor: none;
 }
 
 a:hover {

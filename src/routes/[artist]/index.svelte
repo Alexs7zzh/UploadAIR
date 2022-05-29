@@ -13,8 +13,11 @@
 			<track kind="captions" />
 		</video>
 	{/if}
-	<p class="title">{artist.Work[0].Title}</p>
-	<p class="date">{artist.Work[0].Date}</p>
+	<p class="subtitle">{artist.Work[0].Title}</p>
+	<p class="subtitle">{artist.Work[0].Date}</p>
+	{#if artist.Work[0].Description2}
+		<p class="subtitle">{artist.Work[0].Description2}</p>
+	{/if}
 	<p class="description">{artist.Work[0].Description}</p>
 </div>
 
@@ -40,10 +43,14 @@
 		margin-right: auto;
 	}
 
-	.title,
-	.date {
+	video {
+		margin-bottom: 2em;
+	}
+
+	.subtitle {
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.6em;
+		margin-top: 0.5em;
 	}
 
 	.description {
