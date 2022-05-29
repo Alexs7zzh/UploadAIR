@@ -4,8 +4,8 @@
 	let cursor;
 
 	const onMouseMove = e => {
-		x = e.clientX - 30
-		y = e.clientY - 30
+		x = e.clientX - 50
+		y = e.clientY - 50
 		cursor.style.transform = `translate(${x}px, ${y}px)`
 	}
 </script>
@@ -25,8 +25,8 @@
 <style>
 	#cursor {
 		background-color: #f95f19;
-		height: 60px;
-		width: 60px;
+		height: 100px;
+		width: 100px;
 		border-radius: 50%;
 		position: fixed;
 		z-index: 3;
